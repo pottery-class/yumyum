@@ -1,0 +1,37 @@
+.search {
+  position: relative;
+  top: 80px;
+  left: 600px;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  height: 20px;
+  size: 10px;
+  z-index: 10;
+  background-color: white;
+}
+
+.search input {
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.locate {
+  position: relative;
+  top: 50px;
+  left: 1050px;
+  background: none;
+  border: none;
+  z-index: 10;
+}
+.locate img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.map {
+  position: absolute;
+  width: 50%;
+  height: 40%;
+}
