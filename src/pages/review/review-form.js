@@ -86,10 +86,7 @@ const ReviewForm = () => {
     uploadBytes(imgFileRef, fileInputFile).then(() => {
       getDownloadURL(imgFileRef).then((downloadURL) => {
         for (let i = 0; i < hawkerList.length; i += 1) {
-          postingRef = ref(
-            database,
-            `${REVIEW_FOLDER_NAME}/${hawkerList[i]}/${dishName}`
-          );
+          postingRef = ref(database, `${REVIEW_FOLDER_NAME}/${hawkerList[i]}`);
           const newPostingRef = push(postingRef);
           if (hawker === postingRef._path.pieces_[1]) {
             set(newPostingRef, {

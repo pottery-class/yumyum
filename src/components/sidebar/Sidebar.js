@@ -92,7 +92,11 @@ const linksArray = [
   {
     label: "Home",
     icon: <AiOutlineHome />,
+<<<<<<< Updated upstream
     to: "/",
+=======
+    to: "/home",
+>>>>>>> Stashed changes
     notif: 0,
   },
   {
